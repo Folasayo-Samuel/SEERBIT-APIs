@@ -7,11 +7,11 @@ require('dotenv').config();
 app.use(express.json());
 
 const PORT = 4000 || process.env.PORT
-console.log(`Sehy port too no dey work ni: ${process.env.PORT}`)
+// console.log(`Sehy port too no dey work ni: ${process.env.PORT}`)
 
-console.log(`ENCRYPTED_KEY: ${process.env.ENCRYPTED_KEY}`);
+// console.log(`ENCRYPTED_KEY: ${process.env.ENCRYPTED_KEY}`);
 let seerbitPublicKey = process.env.publicKey
-console.log(`PUBLIC KEY: ${seerbitPublicKey}`);
+// console.log(`PUBLIC KEY: ${seerbitPublicKey}`);
 
 const InvoiceItems = async (req, res) => {
  try {
